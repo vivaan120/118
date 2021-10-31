@@ -1,0 +1,31 @@
+body
+{
+    background-color: aqua;
+}
+h1
+{
+    color: blue;
+    background-color: aquamarine;
+}
+#timer{
+    float: right;
+}
+
+canvas{
+    border: 5px solid white;
+    border-radius: 20px;
+    animation-name: example;
+    animation-duration: 4s;
+    margin-top: 100px;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example{
+from {box-shadow: 1px 1px 70px rgb(251, 255, 0);}
+to {box-shadow: 1px 1px 700px rgb(30, 255, 0);}
+}
+
+p {
+padding-top: 10px;
+font-size: 25px;
+}
