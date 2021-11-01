@@ -1,3 +1,12 @@
+timer = 0;
+score = 0;
+
+timer_check = "";
+answer_holder = "";
+drawn_sketch = "";
+sketch = "";
+quick_draw_data_set = "";
+
 function updateCanvas() {
     background("white");
     random_number = Math.floor((Math.random() * quick_draw_data_set.length) + 1);
@@ -18,7 +27,7 @@ function updateCanvas() {
     check_sketch()
     if(drawn_sketch == sketch)
     {
-      answer_holder = "set"
+      
       score++;
       document.getElementById('score').innerHTML = 'Score: ' + score;
     }
@@ -34,7 +43,7 @@ function updateCanvas() {
     if(timer > 400)
       {
         timer = 0;
-        timer_check = "completed"
+        timer_check = "completed";
       }
       if(timer_check =="completed" || answer_holder == "set")
       {
